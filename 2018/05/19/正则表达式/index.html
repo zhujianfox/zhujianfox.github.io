@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="James blog">
 <meta property="og:description" content="整理一些正则表达式的基础知识正则:专门操作检索字符串的规则工具">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-19T15:35:18.349Z">
+<meta property="og:updated_time" content="2018-05-21T01:48:22.848Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正则表达式知识整理">
 <meta name="twitter:description" content="整理一些正则表达式的基础知识正则:专门操作检索字符串的规则工具">
@@ -258,7 +258,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="朱建">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526732447160&di=b77be1d33b765ce3b598e9f4240fe7bb&imgtype=0&src=http%3A%2F%2Fpic8.58cdn.com.cn%2Fzhuanzh%2Fn_v1bl2lwkoxkoefppclpqvq.png">
+      <meta itemprop="image" content="https://s1.ax1x.com/2018/05/20/CgGGTA.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -344,7 +344,7 @@
       
         <h1 id="整理一些正则表达式的基础知识"><a href="#整理一些正则表达式的基础知识" class="headerlink" title="整理一些正则表达式的基础知识"></a>整理一些正则表达式的基础知识</h1><p>正则:专门操作检索字符串的规则工具<br><a id="more"></a></p>
 <h3 id="正则的方法"><a href="#正则的方法" class="headerlink" title="正则的方法"></a>正则的方法</h3><h4 id="test-用法"><a href="#test-用法" class="headerlink" title="test() 用法"></a>test() 用法</h4><p>//test(str)<br>如果string中有正则匹配项就返回true，否则false。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let str = &apos;abc&apos;;</span><br><span class="line">console.dir(/x/.test(str)); //false</span><br><span class="line">console.dir(/a/.test(str)); //true</span><br></pre></td></tr></table></figure></p>
-<h4 id="search-用法"><a href="#search-用法" class="headerlink" title=".search() 用法"></a>.search() 用法</h4><p>string.search(//||字符串)<br>找到指定字符的位置，没有找到 -1。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let str = &apos;abc&apos;;</span><br><span class="line">console.dir(/x/.test(str)); //false</span><br><span class="line">console.dir(/a/.test(str)); //true</span><br></pre></td></tr></table></figure></p>
+<h4 id="search-用法"><a href="#search-用法" class="headerlink" title=".search() 用法"></a>.search() 用法</h4><p>string.search(//||字符串)<br>找到指定字符的位置，没有找到 -1。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">'abc'</span>;</span><br><span class="line"><span class="built_in">console</span>.dir(<span class="regexp">/x/</span>.test(str)); <span class="comment">//false</span></span><br><span class="line"><span class="built_in">console</span>.dir(<span class="regexp">/a/</span>.test(str)); <span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
 <h4 id="match-用法"><a href="#match-用法" class="headerlink" title=".match() 用法"></a>.match() 用法</h4><p>str.match(//)<br>找到匹配项，返回的是一个数组。没有找到返回null。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let str = &apos;abc&apos;;</span><br><span class="line">console.dir(/x/.test(str)); //false</span><br><span class="line">console.dir(/a/.test(str)); //true</span><br></pre></td></tr></table></figure></p>
 <h4 id="replace-用法"><a href="#replace-用法" class="headerlink" title=".replace() 用法"></a>.replace() 用法</h4><p>string.replace(要替换的|//,替换成什么|callback)<br>替换字符并返回新的字符串。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let str = &apos;abc&apos;;</span><br><span class="line">console.dir(/x/.test(str)); //false</span><br><span class="line">console.dir(/a/.test(str)); //true</span><br></pre></td></tr></table></figure></p>
 <h4 id="RegExp-用法"><a href="#RegExp-用法" class="headerlink" title="RegExp() 用法"></a>RegExp() 用法</h4><p>new RegExp(字符串||正则)<br>新建正则<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let str = &apos;abc&apos;;</span><br><span class="line">console.dir(/x/.test(str)); //false</span><br><span class="line">console.dir(/a/.test(str)); //true</span><br></pre></td></tr></table></figure></p>
@@ -493,7 +493,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526732447160&di=b77be1d33b765ce3b598e9f4240fe7bb&imgtype=0&src=http%3A%2F%2Fpic8.58cdn.com.cn%2Fzhuanzh%2Fn_v1bl2lwkoxkoefppclpqvq.png"
+                src="https://s1.ax1x.com/2018/05/20/CgGGTA.jpg"
                 alt="朱建" />
             
               <p class="site-author-name" itemprop="name">朱建</p>
@@ -507,7 +507,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
